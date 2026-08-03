@@ -1,20 +1,20 @@
-Proyecto creado con las tecnologías:
+**Proyecto creado con las tecnologías:**
 
--JAVA Spring boot
--Thymeleaf
--Spring Data JPA
--CSS
--HTML
+1. JAVA Spring boot
+2. Thymeleaf
+3. Spring Data JPA
+4. CSS
+5. HTML
 
-Instrucciones para instalar la aplicación:
+**Instrucciones para instalar la aplicación:**
 
--Clonar el repositorio.
--Abrirlo en VS Code o IntelliJ.
--Ejecutar la clase principal de Spring Boot.
--Abrir http://localhost:8080/tareas.
+1. Clonar el repositorio.
+2. Abrirlo en VS Code o IntelliJ.
+3. Ejecutar la clase principal de Spring Boot.
+4. Abrir http://localhost:8080/tareas.
 
 Futuras implementaciones:
 
--Permanencia en la lista de tareas
--Buscar por id
+1. Permanencia en la lista de tareas
+2. Buscar por id
 
