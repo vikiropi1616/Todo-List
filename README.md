@@ -6,6 +6,14 @@
 4. CSS
 5. HTML
 
+## **Funcionalidades**
+
+- [x] Crear tareas
+- [x] Editar tareas
+- [x] Eliminar tareas
+- [ ] Login
+- [ ] Usuarios
+
 ## **Instrucciones para instalar la aplicación:**
 
 1. Clonar el repositorio.
