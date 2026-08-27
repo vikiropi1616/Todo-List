@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.spring.todolist.models.tarea;
+import com.example.spring.todolist.models.usuario;
 import com.example.spring.todolist.services.TareaService;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -84,6 +85,9 @@ public class tareaController {
         return "redirect:/tareas";
         
     }
+    
+    
+    
     
     
     
