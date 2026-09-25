@@ -17,8 +17,10 @@
 - [x] Editar tareas
 - [x] Eliminar tareas
 - [x] Persistencia de datos 
-- [ ] Login
-- [ ] Usuarios
+- [x] Login
+- [x] Gestión de usuarios
+- [x] Asociación de tareas a usuarios
+- [x] Cada usuario puede consultar y gestionar sus propias tareas 
 
 ## **Requisitos**
 
