@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.example.spring.todolist.models.tarea;
+import com.example.spring.todolist.models.usuario;
 import com.example.spring.todolist.repositorio.tareaRepositorio;
 
 @Service
@@ -34,5 +35,9 @@ public class TareaService {
     public void eliminar(Long id){
         TareaRepositorio.deleteById(id);
     }
+
+    public List<tarea> obtenerPorUsuario(usuario Usuario) {
+    return TareaRepositorio.findByUsuario(Usuario);
+}
 
 }

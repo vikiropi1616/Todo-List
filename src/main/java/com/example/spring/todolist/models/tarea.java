@@ -84,5 +84,12 @@ public class tarea {
     }
 
     
+    public usuario getUsuario(){
+        return usuario;
+    }
+
+    public void setUsuario(usuario usuario){
+        this.usuario = usuario;
+    }
 
 }

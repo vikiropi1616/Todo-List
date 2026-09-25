@@ -17,11 +17,17 @@
     <li class="breadcrumb-item" aria-current="page">To-Do List</li>
     <li class="breadcrumb-item d-flex">
         
-        <form class="d-flex">
+        <form th:if="${session.usuario == null}" class="d-flex">
      <a th:href=@{/conectarse}><i class="fa-solid fa-user"></i></a>
     </form>
   </a></li>
+
+    <li th:if="${session.usuario != null}"><span> Hola, <span th:text="${session.usuario.nombre}"></span></span>
+        <form th:action="@{/desconectarse}" method="post">
+        <button type="submit">Desconectarse</button></form></li>
   </ol>
+
+
   
 </nav>
     <div class="container">

@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.spring.todolist.models.tarea;
 import com.example.spring.todolist.models.usuario;
 import com.example.spring.todolist.services.TareaService;
+
+import jakarta.servlet.http.HttpSession;
+
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,9 +33,11 @@ public class tareaController {
 
     //model sirve para preparar los datos para Thymeleaf nuestra plantilla visual
     @GetMapping("/tareas")
-    public String mostrarTareas(Model modelo){
+    public String mostrarTareas(Model modelo, HttpSession session){
 
-        modelo.addAttribute("tareas", tareaService.obtenerTodas());
+        usuario Usuario = (usuario) session.getAttribute("usuario");
+
+        modelo.addAttribute("tareas", tareaService.obtenerPorUsuario(Usuario));
 
         return "tareas";
         
@@ -79,9 +84,13 @@ public class tareaController {
 
 
     @PostMapping("/tareas")
-    public String crearTarea(@ModelAttribute tarea Tarea){
+    public String crearTarea(@ModelAttribute tarea Tarea, HttpSession session){
+        usuario Usuario = (usuario) session.getAttribute("usuario");
+
+        Tarea.setUsuario(Usuario);
 
         tareaService.guardar(Tarea);
+
         return "redirect:/tareas";
         
     }

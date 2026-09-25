@@ -23,17 +23,23 @@
 
     <form th:action="@{/conectarse}" method="post" class="form-group">
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" class="form-control">
+         <label for="email">Email</label>
+    <input type="email" name="email" id="email" class="form-control">
 
-        <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" class="form-control">
+    <label for="contrasenya">Contraseña</label>
+    <input type="password" name="contrasenya" id="contrasenya" class="form-control">
 
-        <br>
+    <br>
 
-        <button type="submit">
-            Iniciar sesión
-        </button>
+    <a th:href="@{/registrarse}">
+        Aún no soy usuario. Registrarse
+    </a>
+
+    <br>
+
+    <button type="submit">
+        Iniciar sesión
+    </button>
 
     </form>
 
