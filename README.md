@@ -66,5 +66,5 @@ Sustituye TU_USUARIO y TU_CONTRASEÑA por los datos de tu instalación de MySQL.
 
 ## **Futuras implementaciones:**
 
-1. Buscar por id
+1. Bloquear edición y eliminación de tareas a menos que se esté conectado
 
