@@ -42,12 +42,12 @@
 
   spring.application.name=todolist
 
-spring.datasource.url=jdbc:mysql://localhost:3306/todolist
-spring.datasource.username=TU_USUARIO
-spring.datasource.password=TU_CONTRASEÑA
+  spring.datasource.url=jdbc:mysql://localhost:3306/todolist
+  spring.datasource.username=TU_USUARIO
+  spring.datasource.password=TU_CONTRASEÑA
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+  spring.jpa.hibernate.ddl-auto=update
+  spring.jpa.show-sql=true
 
 Sustituye TU_USUARIO y TU_CONTRASEÑA por los datos de tu instalación de MySQL.
   
