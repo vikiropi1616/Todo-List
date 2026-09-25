@@ -59,9 +59,11 @@
         </div>
     </div>
 
+    <div th:if ="${session.usuario != null}">
     <a th:href="@{/tareas/nueva}" class="btn btn-primary mt-3">
         + Nueva Tarea
     </a>
+    </div>
 
 </div>
 
